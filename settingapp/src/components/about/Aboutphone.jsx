@@ -10,7 +10,7 @@ const Aboutphone = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:800/about/phoneName"
+          "https://backend-kp41axnfr-shubhansh0311s-projects.vercel.app/api/about/phoneName"
         );
         setName(response.data.name);
         // console.log('response for the phone name is ', response)

@@ -13,7 +13,7 @@ const Rename = () => {
     e.preventDefault()
 
     try {
-      const response = await axios.post('http://localhost:800/about/rename', {
+      const response = await axios.post('https://backend-kp41axnfr-shubhansh0311s-projects.vercel.app/api/about/rename', {
         name
       })
       // console.log(response)
