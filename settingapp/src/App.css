@@ -1,0 +1,1911 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  /* font-size: 15px; */
+
+}
+
+
+
+::placeholder {
+  font-size: 15px;
+  padding: 10px;
+  text-transform: capitalize;
+
+}
+
+
+.search_container {
+  display: flex;
+  background: whitesmoke;
+  margin: 25px 5px;
+  padding: 15px;
+  border: none;
+  border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  -ms-border-radius: 23px;
+  -o-border-radius: 23px;
+  ;
+}
+
+
+
+
+.search_text {
+  border: none;
+  width: 100%;
+  outline: none;
+
+  background: none;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.app_btn {
+  width: 95%;
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  border: none;
+  /* border-radius: 15px; */
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.icons {
+  font-size: 18px;
+  width: 24px;
+  color: rgb(45, 157, 232);
+  padding: 4px;
+  background: white;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.app {
+  font-size: 17px;
+  position: relative;
+  top: 5px;
+
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0px 8px;
+}
+
+.fa-greater-than {
+  color: grey;
+}
+
+@media only screen and (with<1024px) {
+  .list {
+    width: 100%;
+    border-radius: 12px;
+    -webkit-border-radius: 12dpx;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+  }
+}
+
+@media only screen and (width>=1024px) {
+  .search {
+    width: 97%;
+  }
+}
+
+.main_container {
+  width: 100%;
+  height: 100%;
+  /* margin-top: 15px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about1 {
+  display: flex;
+}
+
+.sub_container {
+  padding: 0px 13px;
+
+  border: 1px solid #dbc8c8;
+  width: 350px;
+  background: white;
+  min-height: 45rem;
+
+  opacity: 1;
+}
+
+.about_logo {
+  width: 150px;
+  fill: none;
+}
+
+.about_container1 {
+  background: rgb(247, 245, 245);
+  width: 50%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10%;
+  flex-direction: column;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.about_container2 {
+  border-radius: 10%;
+  width: 50%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_container2_1 {
+  background: rgb(247, 245, 245);
+  border: none;
+  width: 100%;
+  margin-bottom: 2rem;
+  height: 60%;
+  border-radius: 10px;
+  padding: 25px 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.about_container2_2 {
+  background: rgb(247, 245, 245);
+  border: none;
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: -20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.about2 {
+
+  padding: 10px;
+}
+
+/* for side button */
+.btn {
+  border: none;
+  font-size: 20px;
+  color: grey;
+  background: none;
+}
+
+hr {
+  width: 100%;
+  margin: 12px 0px;
+  background-color: #e1d8d8e5;
+  border: 0 none;
+  color: #121010e0;
+  height: .5px;
+}
+
+.text_secondary {
+  color: grey;
+  font-size: 15px;
+  font-weight: bolder;
+  margin-bottom: 4px;
+}
+
+.text_primary {
+  color: rgb(8, 8, 8);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* pathnmae heading */
+.heading_primary {
+  margin: 5px;
+  color: rgba(100, 96, 96, 0.753);
+  font-weight: normal;
+  text-shadow: 1px 1px rgb(48, 47, 47);
+}
+
+.btn_top {
+  margin: 5px;
+  background: none;
+  border: none;
+  font-size: 35px;
+  color: rgba(244, 241, 241, 0.753);
+  text-shadow: 1px 1px rgb(18, 18, 18);
+}
+
+
+/* details section */
+.detailDiv {
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 10px;
+  /* width: 85%;ss */
+  margin: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.detailsDiv_3 {
+  display: flex;
+  /* width: 100%; */
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin: 15px;
+  justify-content: space-between;
+}
+
+.core_container {
+  margin: 7rem 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* spacing button and text to left and right */
+.set {
+  width: 100%;
+  margin: 2px;
+  padding: 2px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* imgcentering */
+.imgCenter {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 100px;
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(66, 66, 203, 0.6));
+  -moz-filter: drop-shadow(0px 10px 5px rgba(65, 65, 207, 0.6));
+  -ms-filter: drop-shadow(0px 4px 5px rgba(90, 90, 158, 0.6));
+  -o-filter: drop-shadow(0px 4px 5px rgba(107, 107, 191, 0.6));
+  filter: drop-shadow(0px 16px 10px rgba(66, 66, 203, 0.6));
+}
+
+/* backup style */
+.backUpStyle {
+  display: flex;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background: WhiteSmoke;
+  margin: 5px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+
+
+/* toggle btn */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  top: 20px;
+  left: 5px;
+  width: 50px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .1s;
+  transition: .1s;
+  -moz-transition: .1s;
+  -ms-transition: .1s;
+  -o-transition: .1s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 13px;
+  left: 8px;
+  bottom: 5px;
+  background-color: white;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  -ms-transition: .1s;
+  -o-transition: .1s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* image icon size */
+.imgSize {
+  width: 21px;
+  min-height: 20px;
+  position: relative;
+  bottom: 2px;
+  margin-right: 12px;
+  border-radius: 2px;
+  background: white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+
+/* reset container
+ */
+.Reset {
+  background: whitesmoke;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.reset {
+  display: flex;
+  align-items: flex-start;
+  margin: 15px 0px;
+}
+
+.eraseDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 15px;
+  background: whitesmoke;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin: 0px 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+}
+
+.eraseBtn {
+  color: red;
+  border: none;
+  padding: 12px 0px;
+}
+
+
+.renameText {
+  width: 92%;
+  background: whitesmoke;
+  border-radius: 15px;
+  font-size: 20px;
+  margin: 10px 0px;
+  padding: 12px;
+  border: none;
+  outline: none
+    /* border: 3px solid #2196F3; */
+  ;
+  color: black;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  outline-color: #2196F3;
+}
+
+/* sound css */
+
+.soundMain {
+  display: flex;
+  margin: 10px;
+
+}
+
+.soundSub1 {
+
+  width: 40%;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.soundSub2 {
+  margin-left: 10px;
+  border: none;
+  width: 60%;
+
+
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.soundSub2_1 {
+  background: whitesmoke;
+  padding: 18px 15px;
+  display: flex;
+  border-radius: 20px;
+
+  margin-bottom: 15px;
+}
+
+
+.soundSub2_2 {
+  background: whitesmoke;
+  padding: 18px 15px;
+  border-radius: 20px;
+  display: flex;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.soundMain2 {
+  margin: 12px 5px;
+
+
+}
+
+#slider {
+
+  width: 100%;
+}
+
+.setBtn {
+  display: flex;
+  /* font-size: 15px; */
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+  margin: 20px 0px;
+  border: none;
+  background: none;
+}
+
+.btnText {
+
+  text-align: left;
+
+}
+
+.btnText>h4 {
+  color: black;
+  font-weight: bold;
+}
+
+.btnText>h5 {
+  margin-top: 5px;
+  font-size: 13px;
+  color: grey;
+  font-weight: normal;
+}
+
+.h_3 {
+  margin: 32px 0px -10px 0px;
+}
+
+
+
+.soundMain2>h3 {
+  margin: 12px 0px
+}
+
+.setArrBtn {
+  position: relative;
+  height: 15px;
+  color: grey;
+  font-weight: bolder;
+}
+
+
+.soundImg1 {
+  margin: 0px -4px;
+  width: 100px;
+  height: 100px;
+}
+
+.soundImg2 {
+  margin: 0px 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.soundIcons {
+  width: 25px;
+  position: relative;
+  height: 25px;
+
+  font-size: 12px;
+  margin-right: 12px;
+  border-radius: 2px;
+  background: white;
+  -webkit-border-radius: 2px;
+}
+
+/* sound assistant"*/
+
+.assistant_container {
+
+  padding: 10px;
+  margin: 8px 0px;
+}
+
+.assistant_container>label {
+  width: 50%;
+
+}
+
+.align {
+  width: 80%;
+}
+
+/* headphoneControls */
+.headphoneBtn {
+  text-align: left;
+  margin: 10px;
+  padding: 12px;
+  font-size: 18px;
+
+  background-color: white;
+  border: none;
+
+  padding-left: 10px;
+
+}
+
+.headphoneBtn:focus {
+
+  opacity: 0.7;
+  color: rgb(16, 106, 242);
+  background: #adc7f8;
+}
+
+input[type="button"] {
+  position: absolute;
+  margin: 150px;
+  left: 100px;
+}
+
+/* equalizer container */
+/* .main_equalizer {
+  margin: 20px 10px;
+}
+
+.sub_equalizer {
+  width: 100%;
+  flex-wrap: wrap;
+  display: inline-flex;
+  justify-content: space-around;
+
+} */
+
+.equalizer_img {
+  width: 90px;
+  border-radius: 15px;
+  height: 80px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  padding: 1px;
+  margin: 5px;
+
+  -o-border-radius: 15px;
+}
+
+/* 
+.equalizer_img_clicked {
+
+  border: 3px solid blue;
+} */
+
+.equalizer {
+
+  width: 1000%;
+  height: 100%;
+  rotate: 270deg;
+  position: relative;
+  margin-left: -231px;
+  left: 9.7rem;
+  top: 5rem;
+  margin-right: 79px;
+}
+
+/*  app turning on bluetooth*/
+.img_position {
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  width: 23px;
+  position: relative;
+  margin-right: 18px;
+  top: 10px;
+}
+
+
+/* printing */
+.printBtn {
+  display: flex;
+  background: none;
+  border: none;
+  /* margin: 0px 5px; */
+  width: 100%
+}
+
+.printImg {
+  padding: 4px;
+  border: 2px solid #2fadad;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  width: 35px;
+  position: relative;
+  margin-right: 10px;
+  top: 8px;
+}
+
+.plusImg {
+  position: relative;
+  border: none;
+  width: 25px;
+  top: 15px;
+  left: 5px;
+  margin-right: 25px
+}
+
+.aboutPrint>h4, .aboutPrint>h3, .aboutPrint>p {
+  color: rgb(128, 128, 128);
+  margin: 15px 0px;
+}
+
+/* dns
+ */
+#hostname {
+  width: 95%;
+  padding: 18px 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  color: black;
+  background: whitesmoke;
+  margin: 14px 0px;
+  outline: none;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+::placeholder {
+  font-size: 16px;
+
+}
+
+#btn4 {
+  background: none;
+}
+
+.dns {
+  display: flex;
+  background: none;
+  width: 100%;
+  ;
+  align-items: center;
+  justify-content: center;
+}
+
+.dnsBtn {
+  padding: 10px 30px;
+  font-weight: bolder;
+  font-size: 17px;
+  background: whitesmoke;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.fa-check {
+  color: rgb(60, 60, 225);
+}
+
+
+/* data usage */
+.dataImg {
+  padding: 4px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  position: relative;
+  margin-right: 10px;
+  top: 15px;
+  left: 5px;
+  width: 30px;
+  border: none;
+}
+
+.dataDiv {
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 15px 0px;
+  border: none;
+  background: none;
+
+  flex-direction: column;
+  text-align: left;
+  margin-left: 5px
+}
+
+/* reset network */
+.netBtn {
+  border: none;
+  font-size: 20px;
+  color: black;
+  background: none;
+  margin: 15px 0px;
+  text-align: left;
+}
+
+.netText {
+  margin: 15px 0px;
+  width: 100%;
+  font-size: 12px;
+  color: grey
+}
+
+.netDiv {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  text-align: left
+}
+
+
+/* nearby share */
+.nearByImg {
+  width: 4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* wifi */
+
+
+
+.loaders {
+  animation: rotation 1s linear 10;
+  animation: rotationBack 0.5s linear 10;
+  /*animation-duration: 5s;
+  */
+  -webkit-animation: rotation 1s linear 4;
+  -webkit-animation: rotation 1s linear 10;
+}
+
+
+.loader {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #121313 #040404 transparent;
+  box-sizing: border-box;
+
+
+}
+
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: #100f0f black transparent;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transform-origin: center center;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+.wifiArrow {
+  position: relative;
+  border-radius: 50%;
+  background: WhiteSmoke;
+  padding: 8px;
+  bottom: 3px
+}
+
+
+/* wifi */
+.wifiBtn {
+  border: none;
+  border-radius: 25px;
+  padding: 8px 22px;
+  position: relative;
+  bottom: 8px;
+  color: blue;
+  background: rgb(177 213 241 / 35%);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.wifiNetworks {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0px;
+}
+
+/* ------------> ADD NETWORK */
+.upDown {
+
+  width: 21px;
+  position: relative;
+  margin-left: 3px;
+  top: 4px
+}
+
+.AddNetworkText {
+  color: rgb(111, 109, 109);
+  font-size: 18px;
+
+}
+
+/* brightness component */
+.sliderBright-cont {
+  /* perspective: 25px; */
+  margin: 10px;
+  background: rgb(236, 229, 229);
+
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 15px 25px 25px 15px;
+
+}
+
+.sliderBright {
+  position: relative;
+  width: 100%;
+
+  border-radius: 15px 25px 25px 15px;
+
+}
+
+.sliderBright input {
+
+  position: absolute;
+  top: 0;
+  height: 35px;
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: transparent;
+  z-index: 99;
+  left: -6px;
+  -webkit-transition: width ease 1s;
+  -moz-transition: width ease 1s;
+  -ms-transition: width ease 1s;
+  -o-transition: width ease 1s;
+}
+
+.sliderBright input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: rgb(236, 229, 229);
+
+
+
+  background: none;
+
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.sliderBright progress {
+  width: 100%;
+  height: 25px;
+
+
+  webkit-appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px 25px 25px 15px;
+  overflow: hidden;
+  -webkit-border-radius: 20px 0px 0px 20px;
+  -moz-border-radius: 15px 25px 25px 15px;
+  -ms-border-radius: 15px 25px 25px 15px;
+  -o-border-radius: 15px 25px 25px 15px;
+  -webkit-transition: width 10s ease;
+  -moz-transition: width 10s ease;
+  -ms-transition: width 10s ease;
+  -o-transition: width 10s ease;
+}
+
+.sliderBright progress::-webkit-progress-value {
+  background: rgb(28, 68, 231);
+  border-radius: 15px 25px 25px 15px;
+
+}
+
+.sliderBright progress::-webkit-progress-bar {
+  border-radius: 35px;
+  /* background: rgb(174, 217, 255); */
+  background: rgb(236, 229, 229);
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+
+
+/* refresh component */
+
+.refresh_container {
+  display: flex;
+  height: 100px;
+  border-radius: 15px;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px;
+  background: linear-gradient(90deg, orange 50%, #3bc68e 50%)
+}
+
+
+/*font section */
+.carousel-item {
+  width: 94%;
+
+  height: 130px;
+  border-radius: 15px;
+
+  transition: opacity .2s infinite;
+  -webkit-transition: opacity .2s infinite;
+  -moz-transition: opacity .2s infinite;
+  -ms-transition: opacity .2s infinite;
+  -o-transition: opacity .2s infinite;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.carousel-item>img {
+
+  height: 150px;
+  border-radius: 15px;
+}
+
+
+/* fontpage */
+.fontBtn {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+  background: #e9e6dc;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 7px;
+  fontFamily: monospace;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+
+
+/* SIM Component */
+.sims1, .sims3 {
+  display: flex;
+  width: 99%;
+  justify-content: space-between;
+}
+
+.sim {
+  background: whitesmoke;
+  padding: 20px 8px;
+  width: 50%;
+  border-radius: 10px;
+  margin: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.sim1, .sim2, .null {
+  width: 25px;
+  -webkit-appearance: none;
+  background: none;
+}
+
+.sims2, .sims3 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 96%;
+  padding: 3px 2px;
+  border-radius: 10px;
+  /* background: rgb(240, 235, 235);
+  bg */
+  background: whitesmoke;
+
+}
+
+.sims2>span {
+  padding: 3px 7px;
+  padding-bottom: 0px;
+}
+
+.sims3>span {
+
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  /* padding: 10px 5px; */
+  border-radius: 7px;
+  align-items: center;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+
+  padding: 3px 7px;
+  padding-bottom: 0px;
+}
+
+
+#simInfoName, #simInfoNumber, #customSizeForm {
+  background: rgb(162 232 252 / 59%);
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.sims2 input[type="radio"], .sims3 input[type="radio"] {
+  display: none;
+
+  /* Hide the default radio input */
+}
+
+.sims2 label {
+  cursor: pointer;
+  padding: 5px;
+  /* Adjust padding as needed */
+}
+
+.sims3 label {
+  cursor: pointer;
+}
+
+.sims2 label img, .sims3 label img {
+  border-radius: 10px;
+  width: 25px;
+  height: 26px;
+  padding: 5px 31px;
+  transition: 0.2s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.sims3 label img {
+  padding: 5px 3.7rem;
+
+}
+
+.sims2 input[type="radio"]:checked+label img {
+  /* border-color: blue; */
+  background: blue;
+  border: none
+    /* Set border color for the selected radio button */
+}
+
+.sims3 input[type="radio"]:checked+label img {
+  /* border-color: blue; */
+  background: #27d28a;
+  border: none
+    /* Set border color for the selected radio button */
+}
+
+
+
+
+/* css */
+/* CSS */
+
+.vrBtn {
+  display: block;
+  width: 100%;
+  margin: 10px 0px;
+  text-align: left;
+  /* padding: 18px 12px; */
+  border: none;
+  border-radius: 15px;
+  background: rgb(235, 235, 235);
+  font-size: 22px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.preferNet input[type="radio"] {
+  display: none;
+  margin: 15px;
+}
+
+.preferNet label {
+  position: relative;
+  cursor: pointer;
+  font-weight: bolder;
+
+  /* padding-left: 30px; */
+  /* Set the space for the custom radio button */
+  font-size: 20px;
+}
+
+.preferNet label:before {
+  content: '✓';
+  font-weight: bolder;
+  position: absolute;
+  left: 15px;
+  top: 23px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 18px;
+  color: transparent;
+  transition: all 0.2s ease;
+}
+
+
+.preferNet input[type="radio"]:checked+label:before {
+
+  color: #0a60bcde
+}
+
+.preferNet input[type="radio"]:checked+label {
+  color: #0a60bcde;
+
+}
+
+
+.vrBtn label {
+  display: block;
+  cursor: pointer;
+
+  padding: 20px 35px;
+
+
+  transition: all 0.3s ease;
+}
+
+.vrBtn input[type="radio"]:checked+label {
+  background-color: #79cefc61;
+
+  border-radius: 15px;
+
+}
+
+.dataLimit {
+  /* width: 98%; */
+  background: white;
+  box-shadow: 0px 0px 5px 1px rgb(219, 215, 215);
+  padding: 5px;
+}
+
+.dataLimitVrBtn {
+  display: block;
+  width: 100%;
+  margin: 10px 0px;
+  text-align: left;
+  /* padding: 18px 12px; */
+  border: none;
+  background: white;
+  font-size: 22px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.dataLimitVrBtn label {
+  display: block;
+  cursor: pointer;
+
+  padding: 20px 35px;
+
+
+  transition: all 0.3s ease;
+}
+
+.dataLimitVrBtn input[type="radio"]:checked+label {
+  background-color: #79cefc61;
+
+  /* border-radius: 15px; */
+
+}
+
+/* bluetooth icons🎧🎧 */
+.bluetoothIcons {
+  width: 25px;
+  height: 25px;
+
+  position: relative;
+  top: 10px;
+  font-size: 12px;
+  margin-right: 12px;
+  border-radius: 2px;
+
+  -webkit-border-radius: 2px;
+}
+
+.bluetoothGreater {
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  font-size: 10px;
+  border: none;
+  padding: 6px 7px;
+  background: #beb5b54f;
+  left: 5px;
+}
+
+.bluetoothBtn {
+  width: -webkit-fill-available;
+  padding: 8px 15px;
+
+  padding-bottom: 15px;
+  background: whiteSmoke;
+  border: none;
+  /* border-radius: 15px; */
+  -webkit-border-radius: 15px;
+}
+
+
+.displayNavLinks {
+
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 16px
+}
+
+
+select {
+  width: 90px;
+  padding: 5px 20px;
+  background: url('./images/updown.png')no-repeat right center;
+  border: none;
+  -webkit-appearance: none;
+  background-size: 15px;
+  color: grey;
+  outline: none;
+  text-decoration: none;
+
+}
+
+select option {
+  outline: none;
+  font-weight: bolder;
+  border-top: none;
+  font-size: 15px;
+
+
+}
+
+
+
+/* display mode */
+
+.displayMode {
+  margin: 0px 10px;
+  width: 49%;
+  display: flex;
+  text-align: center;
+
+  flex-direction: column
+}
+
+.displayMode label {
+  font-weight: bold;
+  color: grey;
+  font-size: 18px
+}
+
+
+
+/* Hide the default radio button */
+.displayMode input, .checkmark {
+  display: none;
+
+}
+
+
+
+/* Style the image */
+.displayMode img {
+  width: 100%;
+  height: 200px;
+  padding: 3px;
+  border-radius: 10px;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+
+}
+
+.displayMode input[type='radio']+label img {
+  box-sizing: border-box;
+}
+
+
+.displayMode input[type='radio']:checked+label img {
+  border: 3px solid blue;
+  border-radius: 10px;
+  color: blue;
+  transform: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+}
+
+.displayMode input[type="radio"]:checked+.radio-container {
+  color: blue;
+  /* Set your desired text color here */
+}
+
+
+
+
+
+/*  */
+.soundUpDown {
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  position: relative;
+  /* top: 4px; */
+}
+
+
+
+.soundBtn {
+  width: 100%;
+
+  font-size: 22px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.notifyCall {
+  width: 80%;
+  border-radius: 15px;
+  background: rgb(255, 255, 255);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  position: relative;
+  left: 25px;
+  box-shadow: 0px 0px 5px 0px rgb(177, 173, 173);
+}
+
+.notifyCall input[type="radio"] {
+  display: none;
+
+}
+
+.notifyCall label {
+  position: relative;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 15px;
+
+}
+
+.notifyCall label:before {
+  content: '✓';
+  font-weight: bolder;
+  top: 0px;
+  right: 10px;
+  font-size: 16px;
+  margin: 10px;
+  color: transparent;
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+
+.notifyCall input[type="radio"]:checked+label:before {
+  color: #0a60bcde
+}
+
+.notifyCall input[type="radio"]:checked+label {
+  color: #0a60bcde;
+}
+
+
+.soundBtn label {
+  display: block;
+  cursor: pointer;
+  padding: 15px 20px;
+  /* transition: all 0.3s ease; */
+}
+
+.soundBtn input[type="radio"]:checked+label {
+  background-color: #79cefc61;
+
+}
+
+.NotifyDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.NotifyInDiv {
+
+  color: grey;
+  font-weight: bold;
+  display: flex;
+
+  text-align: right;
+}
+
+.NotifyInDiv>p {
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+/* soundMode */
+
+.displayMode {
+  margin: 0px 10px;
+  width: 49%;
+  display: flex;
+  text-align: center;
+
+  flex-direction: column
+}
+
+.displayMode label {
+  font-weight: bold;
+  color: grey;
+  font-size: 18px;
+}
+
+
+
+/* Hide the default radio button */
+.equalizerBar {
+  margin: 12px 0px
+}
+
+.sub_equalizer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.soundMode input, .checkmark {
+  display: none;
+
+}
+
+.soundMode {
+  text-align: center;
+  display: flex;
+  font-size: 15px;
+  flex-direction: column;
+}
+
+/* Style the image */
+.soundMode img {
+  width: 90px;
+  height: 80px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.soundMode input[type='radio']+label img {
+  box-sizing: border-box;
+}
+
+
+.soundMode input[type='radio']:checked+label img {
+  border: 3px solid blue;
+  border-radius: 10px;
+  padding: 3px;
+  color: blue;
+  transform: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+}
+
+.soundMode input[type="radio"]:checked+.radio-container {
+  color: blue;
+  /* Set your desired text color here */
+}
+
+.sound_bars {
+
+  display: flex;
+  margin: 30px 0px;
+  flex-direction: column
+}
+
+.rangeBars {
+  margin: 10px 0px;
+}
+
+.switchStyle {
+  top: 30px
+}
+
+.Cast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 15px;
+  background: '#e8f9ff';
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.MiShare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+  flex-direction: column
+}
+
+.addDNS {
+  padding: 15px;
+}
+
+#DNSAccountDiv, #DNSDeviceDiv, .wifiDivs {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.DNSdiv {
+  position: absolute;
+  width: -moz-fit-content;
+  width: 20rem;
+  left: 0px;
+  padding: 5px;
+  height: 160px;
+  top: -50px;
+}
+
+.resetBtn {
+  background: none;
+}
+
+.resetBtn input[type="radio"] label {
+  background: none;
+}
+
+.resetBtn input[type="radio"]:checked+label {
+  background: none;
+}
+
+.resetNet label:before {
+  left: 2px;
+}
+
+.deviceName {
+  width: 100%;
+  border: none;
+
+  border-bottom: 2px solid lightskyblue;
+  outline: none;
+}
+
+.deviceNameBtns {
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.deviceNameBtn {
+  margin: 10px;
+  border: none;
+  background: none;
+  color: #a52a2a87;
+  font-weight: bolder;
+}
+
+.dnsdiv {
+  padding: 15px;
+  width: -webkit-fill-available
+}
+
+.dnsBtnDivv {
+
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px
+}
+
+/* wifi divs
+
+ */
+.wifiDivs {
+  width: 380px;
+  left: auto;
+  position: absolute;
+  margin: 0px;
+
+}
+
+
+/* customDataLimit */
+#mainCustomDataLimit {
+  width: 90%;
+  position: relative;
+  top: 50px
+}
+
+#customDataLimit {
+  padding: 10px;
+  border: 2px solid red;
+
+}
+
+#customDataLimit>h3 {
+  text-align: center;
+
+}
+
+#customDataLimit>input {
+  width: -webkit-fill-available;
+  outline: 2px solid deepskyblue;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+
+
+}
+
+.connectionDNS {
+  height: fit-content;
+  position: relative;
+}
+
+.dataLimitBtn {
+  border-radius: 16px;
+  padding: 10px 30px;
+  font-weight: bolder;
+  font-size: 17px;
+  background: whitesmoke;
+  border: none;
+  margin: 14px;
+  width: -webkit-fill-available;
+}
+
+#sizeDiv {
+  opacity: 0;
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+  width: 90%
+}
+
+#div2 {
+
+  margin: 20px 0px;
+
+  background: whiteSmoke;
+  padding: 15px;
+  width: 70%;
+  border-radius: 15px
+}
+
+.Astyle {
+
+
+  display: flex;
+  position: relative;
+  bottom: 10px;
+  width: 90%;
+
+}
+
+.textStyle {
+
+  padding: 15px;
+  margin: 5px;
+  width: 83%;
+
+  position: absolute;
+  bottom: 8rem;
+
+}
+
+.adjustText {
+  background: blue;
+  color: white;
+  width: 60%;
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}

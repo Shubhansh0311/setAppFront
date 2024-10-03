@@ -1,0 +1,211 @@
+      <div>
+            <span
+              className='setBtn'
+              style={{ marginLeft: '-10px' }}
+              onClick={() => {
+                document.getElementById('security').style.display = 'flex'
+              }}
+            >
+              <div className='btnText' style={{ margin: '10px' }}>
+                <h3 style={{ color: 'black' }}>Security</h3>
+              </div>
+
+              <span style={{ position: 'relative', top: '7px' }}>
+                <span className='AddNetworkText'>{text}</span>
+                <img src={updown} className='upDown' alt='' />{' '}
+              </span>
+            </span>
+
+            {/* 😃😃😃 */}
+            <span
+              id='security'
+              className='netDiv'
+              onClick={() => {
+                document.getElementById('security').style.display = 'none'
+              }}
+              style={{
+                display: 'none',
+                border: '2px solid red',
+                width: '80%',
+                padding: '0px 20px',
+                borderRadius: '15px'
+              }}
+            >
+              <span
+                className='netBtn'
+                id='btn1'
+                onClick={() => {
+                  functions.btn1Clicked()
+                  setText('none')
+                }}
+              >
+                <i
+                  className='fa-solid fa-check'
+                  id='none'
+                  style={{ marginRight: '10px' }}
+                ></i>
+                None
+              </span>
+              <span
+                className='netBtn'
+                id='btn2'
+                onClick={() => {
+                  functions.btn2Clicked()
+                  setText('WPA2-Personal')
+                }}
+              >
+                <i
+                  className='fa-solid fa-check'
+                  id='WPA2-Personal'
+                  style={{ marginRight: '10px', opacity: '0' }}
+                >
+                  {' '}
+                </i>
+                WPA2-Personal
+              </span>
+              <span
+                className='netBtn'
+                id='btn3'
+                onClick={() => {
+                  functions.btn3Clicked()
+                  setText('WPA3-Personal')
+                }}
+              >
+                <i
+                  className='fa-solid fa-check'
+                  id='WPA3-Personal'
+                  style={{ marginRight: '10px', opacity: '0' }}
+                >
+                  {' '}
+                </i>
+                WPA3-Personal
+              </span>
+            </span>
+          </div>
+
+          <span
+            className='setBtn'
+            style={{ marginLeft: '-10px' }}
+            onClick={() =>
+              (document.getElementById('bands').style.display = 'flex')
+            }
+          >
+            <div className='btnText' style={{ margin: '10px' }}>
+              <h3 style={{ color: 'black' }}>Select AP band</h3>
+            </div>
+
+            <span style={{ position: 'relative', top: '7px' }}>
+              <span className='AddNetworkText'>{hertz}</span>
+              <img src={updown} className='upDown' alt='' />{' '}
+            </span>
+          </span>
+          <span
+            id='bands'
+            className='netDiv'
+            onClick={() => {
+              document.getElementById('bands').style.display = 'none'
+            }}
+            style={{
+              display: 'none',
+              border: '2px solid red',
+              width: '80%',
+              padding: '0px 20px',
+              borderRadius: '15px'
+            }}
+          >
+            <span
+              className='netBtn'
+              id='band1'
+              onClick={() => {
+                functions.band1Clicked()
+                setHertz('2.4 GHz')
+              }}
+            >
+              <i
+                className='fa-solid fa-check'
+                id='checkBand1'
+                style={{ marginRight: '10px' }}
+              ></i>
+              2.4 GHz
+            </span>
+            <span
+              className='netBtn'
+              id='band2'
+              onClick={() => {
+                functions.band2Clicked()
+                setHertz('5 GHz')
+              }}
+            >
+              <i
+                className='fa-solid fa-check'
+                id='checkBand2'
+                style={{ marginRight: '10px', opacity: '0' }}
+              >
+                {' '}
+              </i>
+              5 GHz
+            </span>
+          </span>
+          <span
+            className='setBtn'
+            style={{ marginLeft: '-10px' }}
+            onClick={() => {
+              document.getElementById('SSID').style.display = 'flex'
+            }}
+          >
+            <div className='btnText' style={{ margin: '10px' }}>
+              <h3 style={{ color: 'black' }}>Hidden network</h3>
+            </div>
+
+            <span style={{ position: 'relative', top: '7px' }}>
+              <span className='AddNetworkText'> {ssid}</span>
+              <img src={updown} className='upDown' alt='' />{' '}
+            </span>
+          </span>
+          <span
+            id='SSID'
+            className='netDiv'
+            onClick={() => {
+              document.getElementById('SSID').style.display = 'none'
+            }}
+            style={{
+              display: 'none',
+              border: '2px solid red',
+              width: '80%',
+              padding: '0px 20px',
+              borderRadius: '15px'
+            }}
+          >
+            <span
+              className='netBtn'
+              id='Off'
+              onClick={() => {
+                functions.SSID1Clicked()
+                setSSID('Off')
+              }}
+            >
+              <i
+                className='fa-solid fa-check'
+                id='checkOff'
+                style={{ marginRight: '10px' }}
+              ></i>
+              Off
+            </span>
+            <span
+              className='netBtn'
+              id='On'
+              onClick={() => {
+                functions.SSID2Clicked()
+                setSSID('On')
+              }}
+            >
+              <i
+                className='fa-solid fa-check'
+                id='checkOn'
+                style={{ marginRight: '10px', opacity: '0' }}
+              >
+                {' '}
+              </i>
+              On
+            </span>
+          </span>
