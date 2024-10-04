@@ -13,15 +13,17 @@ const Rename = () => {
     e.preventDefault()
 
     try {
-      const response = await axios.post('https://backend-kp41axnfr-shubhansh0311s-projects.vercel.app/api/about/rename', {
+      fetch('https://backend-kp41axnfr-shubhansh0311s-projects.vercel.app/api/about/rename', {
+        method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          // Include other headers if necessary
-      }
-      }
-    
-    )
-      console.log(response)
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ /* your data here */ }),
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+      // console.log(response)
       navigate(-1)
     } catch (error) {
       console.log('phone cannot be renamed ', error)
