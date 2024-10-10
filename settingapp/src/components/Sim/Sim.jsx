@@ -19,7 +19,7 @@ const Sim = () => {
   const handleCallingSimChng =async e => {
     const data = { simCalling: e.target.id }
     try {
-      const response = await axios.post('http://localhost:800/sim/callingSim', data)
+      const response = await axios.post('https://setting-app-backend.vercel.app/sim/callingSim', data)
    
       setCallingSim(data.simCalling)
     } catch (err) {
@@ -31,7 +31,7 @@ const Sim = () => {
   const handleDataSimChng = async e => {
     const data = { simData: e.target.id }
     try {
-      const response = await axios.post('http://localhost:800/sim/dataSim', data)
+      const response = await axios.post('https://setting-app-backend.vercel.app/sim/dataSim', data)
      
       setDataSim(data.simData)
     } catch (err) {
@@ -44,7 +44,7 @@ const Sim = () => {
     try {
       const data = { name: 'dataBtn' }
       const response = await axios.post(
-        'http://localhost:800/sim/toggleData',
+        'https://setting-app-backend.vercel.app/sim/toggleData',
         data
       )
       setDataBtn(response.data.btnStatus)
@@ -57,31 +57,31 @@ const Sim = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const sims = await axios.get('http://localhost:800/sim/getSim')
+        const sims = await axios.get('https://setting-app-backend.vercel.app/sim/getSim')
         setSim1(sims.data.sim1.name)
 
         setSim2(sims.data.sim2.name)
 
-        const phones = await axios.get('http://localhost:800/sim/getPhone')
+        const phones = await axios.get('https://setting-app-backend.vercel.app/sim/getPhone')
         setPhone1(phones.data.phone1.phone)
         setPhone2(phones.data.phone2.phone)
 
         // togglebtns
 
         const toggleBtnData = await axios.get(
-          'http://localhost:800/sim/getToggleStatus'
+          'https://setting-app-backend.vercel.app/sim/getToggleStatus'
         )
         setDataBtn(toggleBtnData.data.togglesData.dataBtn.btnStatus)
 
         // current active sim for calling
         const callingSim = await axios.get(
-          'http://localhost:800/sim/getCallingSim'
+          'https://setting-app-backend.vercel.app/sim/getCallingSim'
         )
         // console.log(callingSim.data.simCalling)
         setCallingSim(callingSim.data.simCalling)
 
         // current active sim for data
-        const dataSim = await axios.get('http://localhost:800/sim/getDataSim')
+        const dataSim = await axios.get('https://setting-app-backend.vercel.app/sim/getDataSim')
         // console.log(dataSim.data.simData)
         setDataSim(dataSim.data.simData)
       } catch (error) {

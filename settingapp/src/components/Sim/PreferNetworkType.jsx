@@ -11,7 +11,7 @@ const PreferNetworkType = () => {
     const data = { id: netID }
     try {
       const response = await axios.post(
-        'http://localhost:800/sim/networkType',
+        'https://setting-app-backend.vercel.app/sim/networkType',
         data
       )
       console.log("network type ",response);
@@ -25,7 +25,7 @@ const PreferNetworkType = () => {
     const fetchData = async () => {
   try {
     const response = await axios.get(
-      'http://localhost:800/sim/getNetworkType'
+      'https://setting-app-backend.vercel.app/sim/getNetworkType'
     )
     setNetworkType(response.data.networkType)
   } catch (error) {

@@ -15,7 +15,7 @@ const Brightness = () => {
         
         document.body.style.filter = `brightness(${100}%)`
       }
-      const response = await axios.post('http://localhost:800/display/toggle', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/display/toggle', {
         name
       })
       setStateFunction(response.data.btnStatus)
@@ -26,7 +26,7 @@ const Brightness = () => {
   const inputDataChange = async e => {
     const data = { range: e.target.value, name: e.target.name }
     try {
-      const response = await axios.post('http://localhost:800/display/data', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/display/data', {
         data
       })
 
@@ -41,7 +41,7 @@ const Brightness = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:800/display/status')
+        const response = await axios.get('https://setting-app-backend.vercel.app/display/status')
         setAutoBrightness(response.data.autoBrightness.btnStatus)
         setSunlightMode(response.data.sunlightMode.btnStatus)
         if (response.data.autoBrightness.btnStatus) {
@@ -49,7 +49,7 @@ const Brightness = () => {
           const data = { range: 100, name: 'brightnessBar' }
           try {
             const responses = await axios.post(
-              'http://localhost:800/display/data',
+              'https://setting-app-backend.vercel.app/display/data',
               {
                 data
               }
@@ -70,7 +70,7 @@ const Brightness = () => {
       }
 
       // brightness range
-      const response = await axios.get('http://localhost:800/display/getData')
+      const response = await axios.get('https://setting-app-backend.vercel.app/display/getData')
       const brightnessValue = response.data.brightnessBar.range
 
       setBrightness(brightnessValue)

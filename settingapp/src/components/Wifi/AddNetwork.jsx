@@ -23,7 +23,7 @@ const AddNetwork = () => {
     e.preventDefault()
     // console.log(network,password);
     try {
-      const response = await axios.post('http://localhost:800/wifi/data', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/wifi/data', {
         name: e.target.name,
         networkName: network,
         password: password,

@@ -13,10 +13,10 @@ const Connection = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:800/connection/status'
+          'https://setting-app-backend.vercel.app/connection/status'
         )
         const responses = await axios.get(
-          'http://localhost:800/connection/getData'
+          'https://setting-app-backend.vercel.app/connection/getData'
         )
         if (responses.data.PrivateDns.mode == 'privateHost') {
           setMode(`can't connect`)
@@ -40,7 +40,7 @@ const Connection = () => {
     try {
       const name = e.target.name
       const response = await axios.post(
-        'http://localhost:800/connection/toggle',
+        'https://setting-app-backend.vercel.app/connection/toggle',
         { name }
       )
       setStateFunc(response.data.btnStatus)
@@ -58,7 +58,7 @@ const Connection = () => {
     }
     try {
       const response = await axios.post(
-        'http://localhost:800/connection/data',
+        'https://setting-app-backend.vercel.app/connection/data',
         {
           data
         }

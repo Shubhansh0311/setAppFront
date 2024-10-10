@@ -9,7 +9,7 @@ const Chromebook = () => {
     try {
       const data = { name: e.target.name, accName: e.target.value }
       const response = await axios.post(
-        'http://localhost:800/connection/data',
+        'https://setting-app-backend.vercel.app/connection/data',
         { data }
       )
       document.getElementById('DNSAccountDiv').style.display = 'none'
@@ -24,7 +24,7 @@ const Chromebook = () => {
 
       try {
         const response = await axios.get(
-          'http://localhost:800/connection/getData'
+          'https://setting-app-backend.vercel.app/connection/getData'
         )
         setAccount(response.data.ChromebookAccount.AccountName)
       } catch (error) {}

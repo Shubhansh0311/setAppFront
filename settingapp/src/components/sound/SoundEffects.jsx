@@ -7,7 +7,7 @@ const SoundEffects = () => {
   const [dolby,setDolby]=useState(false)
   const handleToggleChng=async(name,setStateFunction)=>{
     try {
-      const response=await axios.post('http://localhost:800/sound/toggle',{name})
+      const response=await axios.post('https://setting-app-backend.vercel.app/sound/toggle',{name})
       setStateFunction(response.data.btnStatus)
     } catch (error) {
       console.log('error while posting data ',error);
@@ -21,7 +21,7 @@ const SoundEffects = () => {
       type: type
     }
   
-    const response = await axios.post('http://localhost:800/sound/data', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/sound/data', {
       data
     })
     document.getElementById('Preset').style.display = 'none'
@@ -31,10 +31,10 @@ const SoundEffects = () => {
   useEffect(()=>{
     const fetchData=async()=>{
 try {
-  const response=await axios.get('http://localhost:800/sound/status')
+  const response=await axios.get('https://setting-app-backend.vercel.app/sound/status')
   setDolby(response.data.DolbyAtmos.btnStatus)
   
-  const mode = await axios.get('http://localhost:800/sound/getData')
+  const mode = await axios.get('https://setting-app-backend.vercel.app/sound/getData')
   
   // console.log(mode);
   setData(mode.data.Preset.mode)

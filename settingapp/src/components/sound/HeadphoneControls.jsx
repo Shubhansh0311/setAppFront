@@ -10,7 +10,7 @@ const [data,setData]=useState('Control Volume')
     const fetchData = async () => {
  try {
      
-  const mode = await axios.get('http://localhost:800/sound/getData')
+  const mode = await axios.get('https://setting-app-backend.vercel.app/sound/getData')
   // console.log(mode.data.mode)
   setData(mode.data.HeadphoneRemote.mode)
  } catch (error) {
@@ -25,7 +25,7 @@ const [data,setData]=useState('Control Volume')
       name: name,
       type: type
     }
-    const response = await axios.post('http://localhost:800/sound/data', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/sound/data', {
       data
     })
     console.log(response);

@@ -27,7 +27,7 @@ const DataLimit = () => {
   }
   const inputChange = async (name, value, setStateFunc) => {
     try {
-      const response = await axios.post('http://localhost:800/hotspot/data', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/hotspot/data', {
         name: 'data limit',
         [name]: value
       })
@@ -40,7 +40,7 @@ const DataLimit = () => {
 
   const toggleChange = async () => {
     try {
-      const response = await axios.post('http://localhost:800/hotspot/toggle', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/hotspot/toggle', {
         name: 'data Limit Btn'
       })
       console.log(response.data.btnStatus)
@@ -52,9 +52,9 @@ const DataLimit = () => {
   useEffect(() => {
     const fetchData = async () => {
  try {
-  const response = await axios.get('http://localhost:800/hotspot/status')
+  const response = await axios.get('https://setting-app-backend.vercel.app/hotspot/status')
   setDataLimitBtn(response.data.dataLimitBtn.btnStatus)
-  const datas = await axios.get('http://localhost:800/hotspot/getData')
+  const datas = await axios.get('https://setting-app-backend.vercel.app/hotspot/getData')
 
   var size = datas.data.dataLimit.size
   console.log(datas.data.dataLimit)

@@ -16,7 +16,7 @@ const Hotspot = () => {
     const data = { name: name }
     try {
       const response = await axios.post(
-        'http://localhost:800/hotspot/toggle',
+        'https://setting-app-backend.vercel.app/hotspot/toggle',
         data
       )
       setStateFunction(response.data.btnStatus)
@@ -28,7 +28,7 @@ const Hotspot = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:800/hotspot/status')
+        const response = await axios.get('https://setting-app-backend.vercel.app/hotspot/status')
 
         setHotspot(response.data.hotspot.btnStatus)
         setHotspotAuto(response.data.hotspotAuto.btnStatus)
@@ -38,7 +38,7 @@ const Hotspot = () => {
         setEthernet(response.data.ethernet.btnStatus)
 
         const hotspotName = await axios.get(
-          'http://localhost:800/hotspot/getData'
+          'https://setting-app-backend.vercel.app/hotspot/getData'
         )
         
         

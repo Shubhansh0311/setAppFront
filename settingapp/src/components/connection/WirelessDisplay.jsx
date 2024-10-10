@@ -9,7 +9,7 @@ const WirelessDisplay = () => {
     try {
       const name = e.target.name
       const response = await axios.post(
-        'http://localhost:800/connection/toggle',
+        'https://setting-app-backend.vercel.app/connection/toggle',
         { name }
       )
 
@@ -22,7 +22,7 @@ const WirelessDisplay = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:800/connection/status'
+          'https://setting-app-backend.vercel.app/connection/status'
         )
         setWirelessMode(response.data.WirelessDisplay.btnStatus)
       } catch (error) {

@@ -15,7 +15,7 @@ const Fonts = () => {
   useEffect(() => {
     const fetchData = async () => {
   try {
-    const mode = await axios.get('http://localhost:800/display/getData')
+    const mode = await axios.get('https://setting-app-backend.vercel.app/display/getData')
     const fontData = mode.data.Fonts
     // console.log("test :",  mode.data.Fonts);
     
@@ -37,7 +37,7 @@ setFonts(fontData[0].Fonts);
       name: name,
       fontName: type
     }
-    const response = await axios.post('http://localhost:800/display/data', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/display/data', {
       data
     })
 

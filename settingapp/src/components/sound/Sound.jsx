@@ -26,7 +26,7 @@ const Sound = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:800/sound/status')
+        const response = await axios.get('https://setting-app-backend.vercel.app/sound/status')
 
 
         setSilentMedia(response.data.SilentMedia.btnStatus)
@@ -42,7 +42,7 @@ if(response.data.DoNotDisturb.btnStatus){
   setDontDisturb('On')
 }
         // rangebars
-        const Response = await axios.get('http://localhost:800/sound/getdata')
+        const Response = await axios.get('https://setting-app-backend.vercel.app/sound/getdata')
 
 console.log("test ",Response);
 
@@ -59,7 +59,7 @@ console.log("test ",Response);
 
   const inputToggleChng = async (name, setStateFunction) => {
     try {
-      const response = await axios.post('http://localhost:800/sound/toggle', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/sound/toggle', {
         name
       })
 
@@ -75,7 +75,7 @@ console.log("test ",Response);
     }
 
     try {
-      const response = await axios.post('http://localhost:800/sound/data', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/sound/data', {
         data
       })
       setStateFunction(response.data.range)

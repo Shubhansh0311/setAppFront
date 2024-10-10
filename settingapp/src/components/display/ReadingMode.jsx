@@ -11,7 +11,7 @@ export const ReadingMode = () => {
   const [data, setData] = useState('')
   const [scheduleData, setScheduleData] = useState('')
   const inputChange = async (name, setStateFunction) => {
-    const response = await axios.post('http://localhost:800/display/toggle', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/display/toggle', {
       name
     })
     setStateFunction(response.data.btnStatus)
@@ -21,7 +21,7 @@ export const ReadingMode = () => {
     const fetchData = async () => {
       try {
         
-      const response = await axios.get('http://localhost:800/display/status')
+      const response = await axios.get('https://setting-app-backend.vercel.app/display/status')
       setReadingBtn(response.data.ReadingBtn.btnStatus)
       setReadingScheduleBtn(response.data.ReadingScheduleBtn.btnStatus)
 
@@ -37,7 +37,7 @@ export const ReadingMode = () => {
       }
   
 
-      const mode = await axios.get('http://localhost:800/display/getData')
+      const mode = await axios.get('https://setting-app-backend.vercel.app/display/getData')
  
       setData(mode.data.ReadingMode.mode)
       setScheduleData(mode.data.ReadingSchedule.mode)
@@ -54,7 +54,7 @@ export const ReadingMode = () => {
       name: name,
       type: type
     }
-    const response = await axios.post('http://localhost:800/display/data', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/display/data', {
       data
     })
   

@@ -13,7 +13,7 @@ const Wifi = () => {
     const name = e.target.name
  
     try {
-      const response = await axios.post('http://localhost:800/wifi/toggle', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/wifi/toggle', {
         name
       })
       setWifiBtn(response.data.btnStatus)
@@ -29,13 +29,13 @@ const Wifi = () => {
   useEffect(() => {
     const fetchData = async () => {
      try {
-      const response = await axios.get('http://localhost:800/wifi/status')
+      const response = await axios.get('https://setting-app-backend.vercel.app/wifi/status')
       setWifiBtn(response.data.btnStatus)
       if (response.data.btnStatus) {
         document.getElementById('wifiDiv').style.display = 'block'
       }
 
-      const SaveNetworks = await axios.get('http://localhost:800/wifi/getData')
+      const SaveNetworks = await axios.get('https://setting-app-backend.vercel.app/wifi/getData')
      
       
       setNetworks(SaveNetworks.data)

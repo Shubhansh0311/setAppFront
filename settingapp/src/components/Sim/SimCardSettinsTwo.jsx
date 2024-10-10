@@ -17,7 +17,7 @@ const SimCardSettingsTwo = () => {
     try {
       const data = { name: name }
       const response = await axios.post(
-        'http://localhost:800/sim/toggleData',
+        'https://setting-app-backend.vercel.app/sim/toggleData',
         data
       )
       setStateFunction(response.data.btnStatus)
@@ -31,7 +31,7 @@ const SimCardSettingsTwo = () => {
 
     const obj = { id: 'sim2', name: newSim2 }
     try {
-      const response = await axios.post('http://localhost:800/sim/setSim', obj)
+      const response = await axios.post('https://setting-app-backend.vercel.app/sim/setSim', obj)
 
       setSim2(newSim2)
       closeName()
@@ -43,15 +43,15 @@ const SimCardSettingsTwo = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const sims = await axios.get('http://localhost:800/sim/getSim')
+        const sims = await axios.get('https://setting-app-backend.vercel.app/sim/getSim')
         setSim2(sims.data.sim2.name)
 
         // phone
-        const phones = await axios.get('http://localhost:800/sim/getPhone')
+        const phones = await axios.get('https://setting-app-backend.vercel.app/sim/getPhone')
         setNum2(phones.data.phone2.phone)
 
         const toggleBtnsData = await axios.get(
-          'http://localhost:800/sim/getToggleStatus'
+          'https://setting-app-backend.vercel.app/sim/getToggleStatus'
         )
         setSim2WifiCall(toggleBtnsData.data.togglesData.sim2WifiCall.btnStatus)
         setSim2TurnOn(toggleBtnsData.data.togglesData.sim2TurnOn.btnStatus)
@@ -70,7 +70,7 @@ const SimCardSettingsTwo = () => {
     const obj = { id: 'phone2', number: newNum2 }
     try {
       const response = await axios.post(
-        'http://localhost:800/sim/setPhone',
+        'https://setting-app-backend.vercel.app/sim/setPhone',
         obj
       )
 

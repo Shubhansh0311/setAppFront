@@ -14,7 +14,7 @@ const AdditionalSettings = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:800/sound/status')
+        const response = await axios.get('https://setting-app-backend.vercel.app/sound/status')
         // console.log(response)
         setTapSounds(response.data.TapSounds.btnStatus)
         setDialPadTones(response.data.DialPadTone.btnStatus)
@@ -32,7 +32,7 @@ const AdditionalSettings = () => {
   })
   const inputToggleChng = async (name, setStateFunction) => {
     try {
-      const response = await axios.post('http://localhost:800/sound/toggle', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/sound/toggle', {
         name
       })
 

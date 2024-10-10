@@ -12,7 +12,7 @@ const Backup = () => {
     const fetchRestoreStatus = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:800/about/restoreStatus'
+          'https://setting-app-backend.vercel.app/about/restoreStatus'
         )
         console.log(response)
         setRestore(response.data.btnStatus)
@@ -29,7 +29,7 @@ const Backup = () => {
       const data = { name: e.target.name, toggle: !restore }
       // Toggle WiFi status in the database
       const response = await axios.post(
-        'http://localhost:800/about/toggleRestore',
+        'https://setting-app-backend.vercel.app/about/toggleRestore',
 
         { data }
       )

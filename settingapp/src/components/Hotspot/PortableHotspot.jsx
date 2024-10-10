@@ -23,7 +23,7 @@ const PortableHotspot = () => {
     e.preventDefault()
     // console.log(network,password);
     try {
-      const response = await axios.post('http://localhost:800/hotspot/data', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/hotspot/data', {
         name: e.target.name,
         networkName: network,
         password: password,

@@ -15,7 +15,7 @@ const Display = () => {
   const [toggle, setToggle] = useState(false)
   const inputChange = async e => {
     const name = e.target.name
-    const response = await axios.post('http://localhost:800/display/toggle', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/display/toggle', {
       name
     })
     setToggle(response.data.btnStatus)
@@ -25,7 +25,7 @@ const Display = () => {
       name: name,
       type: mode
     }
-    const response = await axios.post('http://localhost:800/display/data', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/display/data', {
       data
     })
 console.log("response 1",response);
@@ -38,8 +38,8 @@ console.log("response 1",response);
     
     
 try{
-  const response = await axios.get('http://localhost:800/display/status')
-  const mode = await axios.get('http://localhost:800/display/getData')
+  const response = await axios.get('https://setting-app-backend.vercel.app/display/status')
+  const mode = await axios.get('https://setting-app-backend.vercel.app/display/getData')
   setToggle(response.data.autoRotate.btnStatus)
   setColorScheme(mode.data.ColorScheme.mode)
   if (response.data.SdModeBtn.btnStatus) {

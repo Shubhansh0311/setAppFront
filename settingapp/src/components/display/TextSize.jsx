@@ -9,7 +9,7 @@ const TextSize = () => {
   const inputDataChange = async e => {
     const data = { range: e.target.value, name: e.target.name }
     try {
-      const response = await axios.post('http://localhost:800/display/data', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/display/data', {
         data
       })
 
@@ -22,7 +22,7 @@ const TextSize = () => {
     const fetchData = async () => {
       try {
         //  text size
-        const response = await axios.get('http://localhost:800/display/getData')
+        const response = await axios.get('https://setting-app-backend.vercel.app/display/getData')
         const textSize = response.data.TextSize.range
         setText(textSize)
         if (textSize == 28) {

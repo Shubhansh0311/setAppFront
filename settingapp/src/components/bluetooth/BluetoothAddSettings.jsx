@@ -11,7 +11,7 @@ const BluetoothAddSettings = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:800/bluetooth/status'
+          'https://setting-app-backend.vercel.app/bluetooth/status'
         )
         setPairCompatible(response.data.pairCompatible.btnStatus)
         setDeviceWithoutName(response.data.deviceWithoutName.btnStatus)
@@ -26,7 +26,7 @@ const BluetoothAddSettings = () => {
     const name = { name: names }
     try {
       const response = await axios.post(
-        'http://localhost:800/bluetooth/toggle',
+        'https://setting-app-backend.vercel.app/bluetooth/toggle',
         name
       )
       setStateFunction(response.data.btnStatus)

@@ -9,7 +9,7 @@ const [data,setData]=useState('ReduceBlur')
     const fetchData = async () => {
     
     try {
-      const mode = await axios.get('http://localhost:800/display/getData')
+      const mode = await axios.get('https://setting-app-backend.vercel.app/display/getData')
       // console.log(mode.data.mode)
       setData(mode.data.VrMode.mode)
     } catch (error) {
@@ -26,7 +26,7 @@ const [data,setData]=useState('ReduceBlur')
       type: type
     }
    try{
-    const response = await axios.post('http://localhost:800/display/data', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/display/data', {
       data
     })
     console.log(response);

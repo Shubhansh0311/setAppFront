@@ -46,7 +46,7 @@ const Equaliser = () => {
     }
     try {
       const response = await axios.post(
-        'http://localhost:800/sound/equalizers',
+        'https://setting-app-backend.vercel.app/sound/equalizers',
         datas
       )
       const updatedEqualizers = response.data.Equalizers
@@ -64,7 +64,7 @@ const Equaliser = () => {
       type: mode
     }
 
-    const response = await axios.post('http://localhost:800/sound/data', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/sound/data', {
       data
     })
 
@@ -74,12 +74,12 @@ const Equaliser = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const mode = await axios.get('http://localhost:800/sound/getData')
+        const mode = await axios.get('https://setting-app-backend.vercel.app/sound/getData')
 
         setData(mode.data.GraphicEqualizer.mode)
 
         const response = await axios.get(
-          `http://localhost:800/sound/equalizer/${mode.data.GraphicEqualizer.mode}`
+          `https://setting-app-backend.vercel.app/sound/equalizer/${mode.data.GraphicEqualizer.mode}`
         )
 
        

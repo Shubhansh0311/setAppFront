@@ -10,7 +10,7 @@ const Disturb = () => {
   const [data, setData] = useState('None')
   const inputToggleChng = async (name, setStateFunction) => {
     try {
-      const response = await axios.post('http://localhost:800/sound/toggle', {
+      const response = await axios.post('https://setting-app-backend.vercel.app/sound/toggle', {
         name
       })
       setStateFunction(response.data.btnStatus)
@@ -24,7 +24,7 @@ const Disturb = () => {
       type: type
     }
   
-    const response = await axios.post('http://localhost:800/sound/data', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/sound/data', {
       data
     })
 document.getElementById('NotifyCall').style.display='none'
@@ -33,12 +33,12 @@ document.getElementById('NotifyCall').style.display='none'
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:800/sound/status')
+        const response = await axios.get('https://setting-app-backend.vercel.app/sound/status')
         setDeviceLock(response.data.DeviceLock.btnStatus)
         setDontDisturb(response.data.DoNotDisturb.btnStatus)
         setNotifyRepeatCall(response.data.NotifyRepeatCall.btnStatus)
 
-        const mode = await axios.get('http://localhost:800/sound/getData')
+        const mode = await axios.get('https://setting-app-backend.vercel.app/sound/getData')
   
         // console.log(mode);
         setData(mode.data.NotifyCall.mode)

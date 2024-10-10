@@ -17,7 +17,7 @@ const SimCardSettings = () => {
     try {
       const data = { name: name }
       const response = await axios.post(
-        'http://localhost:800/sim/toggleData',
+        'https://setting-app-backend.vercel.app/sim/toggleData',
         data
       )
       setStateFunction(response.data.btnStatus)
@@ -30,7 +30,7 @@ const SimCardSettings = () => {
 
     const obj = { id: 'sim1', name: newSim1 }
     try {
-      const response = await axios.post('http://localhost:800/sim/setSim', obj)
+      const response = await axios.post('https://setting-app-backend.vercel.app/sim/setSim', obj)
       setSim1(newSim1)
       closeName()
     } catch (err) {
@@ -41,13 +41,13 @@ const SimCardSettings = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const sims = await axios.get('http://localhost:800/sim/getSim')
+        const sims = await axios.get('https://setting-app-backend.vercel.app/sim/getSim')
         setSim1(sims.data.sim1.name)
         // phone
-        const phones = await axios.get('http://localhost:800/sim/getPhone')
+        const phones = await axios.get('https://setting-app-backend.vercel.app/sim/getPhone')
         setNum1(phones.data.phone1.phone)
         const toggleBtnsData = await axios.get(
-          'http://localhost:800/sim/getToggleStatus'
+          'https://setting-app-backend.vercel.app/sim/getToggleStatus'
         )
         
         
@@ -68,7 +68,7 @@ const SimCardSettings = () => {
     const obj = { id: 'phone1', number: newNum1 }
     try {
       const response = await axios.post(
-        'http://localhost:800/sim/setPhone',
+        'https://setting-app-backend.vercel.app/sim/setPhone',
         obj
       )
       setNum1(newNum1)

@@ -9,7 +9,7 @@ const ResetNet = () => {
     try {
       const data = { name: name, simName: sim }
       const response = await axios.post(
-        'http://localhost:800/connection/data',
+        'https://setting-app-backend.vercel.app/connection/data',
         { data }
       )
       console.log(response)
@@ -20,7 +20,7 @@ const ResetNet = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:800/connection/getData'
+          'https://setting-app-backend.vercel.app/connection/getData'
         )
       
         setData(response.data.SimCardReset.SimName)

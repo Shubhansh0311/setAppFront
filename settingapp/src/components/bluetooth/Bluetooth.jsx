@@ -17,7 +17,7 @@ const Bluetooth = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:800/bluetooth/status'
+          'https://setting-app-backend.vercel.app/bluetooth/status'
         )
 
         setToggle(response.data.bluetoothBtn.btnStatus)
@@ -38,7 +38,7 @@ const Bluetooth = () => {
     const name = e.target.name
     try {
       const response = await axios.post(
-        'http://localhost:800/bluetooth/toggle',
+        'https://setting-app-backend.vercel.app/bluetooth/toggle',
         {
           name
         }

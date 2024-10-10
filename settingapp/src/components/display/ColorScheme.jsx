@@ -9,7 +9,7 @@ const ColorScheme = () => {
       name: name,
       type: type
     }
-    const response = await axios.post('http://localhost:800/display/data', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/display/data', {
       data
     })
 
@@ -18,7 +18,7 @@ const ColorScheme = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const mode = await axios.get('http://localhost:800/display/getData')
+        const mode = await axios.get('https://setting-app-backend.vercel.app/display/getData')
 
         setData(mode.data.Colour.mode)
       } catch (err) {

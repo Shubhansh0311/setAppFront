@@ -11,7 +11,7 @@ const Cast = () => {
     const name = e.target.name
     try {
       const response = await axios.post(
-        'http://localhost:800/connection/toggle',
+        'https://setting-app-backend.vercel.app/connection/toggle',
         { name }
       )
       setBtn(response.data.btnStatus)
@@ -21,7 +21,7 @@ const Cast = () => {
   }
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get('http://localhost:800/connection/status')
+      const response = await axios.get('https://setting-app-backend.vercel.app/connection/status')
       console.log("test ",response)
       setBtn(response.data.castBtn.btnStatus)
     }

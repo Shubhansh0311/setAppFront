@@ -7,7 +7,7 @@ const ManageNetwork = () => {
 useEffect(()=>{
   const fetchData=async()=>{
 try {
-  const networks=await axios.get('http://localhost:800/wifi/getData')
+  const networks=await axios.get('https://setting-app-backend.vercel.app/wifi/getData')
   savedNetworks(networks.data);
 
 } catch (error) {
@@ -19,9 +19,9 @@ try {
 
 const deleteNetwork=async(e)=>{
 
-  const response=await axios.delete(`http://localhost:800/wifi/delete/${e}`)
+  const response=await axios.delete(`https://setting-app-backend.vercel.app/wifi/delete/${e}`)
   
-  const networks=await axios.get('http://localhost:800/wifi/getData')
+  const networks=await axios.get('https://setting-app-backend.vercel.app/wifi/getData')
   savedNetworks(networks.data);
 }
   const navigate = useNavigate()

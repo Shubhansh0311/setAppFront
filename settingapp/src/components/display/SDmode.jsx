@@ -7,7 +7,7 @@ const SDmode = () => {
   const [data, setData] = useState('Sunset to sunrise')
   const inputChange = async e => {
     const name = e.target.name
-    const response = await axios.post('http://localhost:800/display/toggle', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/display/toggle', {
       name
     })
     // console.log(responses)
@@ -17,7 +17,7 @@ const SDmode = () => {
   useEffect(() => {
     const fetchData = async () => {
      try {
-      const response = await axios.get('http://localhost:800/display/status')
+      const response = await axios.get('https://setting-app-backend.vercel.app/display/status')
       // setToggle(response.data.btnStatus)
       setToggle(response.data.SdModeBtn.btnStatus)
 
@@ -27,7 +27,7 @@ const SDmode = () => {
         document.getElementById('scheduleDiv').style.opacity = '0'
       }
 
-      const mode = await axios.get('http://localhost:800/display/getData')
+      const mode = await axios.get('https://setting-app-backend.vercel.app/display/getData')
       console.log(mode.data)
       // setData(mode.data.mode.mode)
      } catch (error) {
@@ -42,7 +42,7 @@ const SDmode = () => {
       name: name,
       type: type
     }
-    const response = await axios.post('http://localhost:800/display/data', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/display/data', {
       data
     })
     console.log(response)

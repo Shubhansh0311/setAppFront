@@ -17,12 +17,12 @@ const NearbyShare = () => {
     const name = names
     try {
       const response = await axios.post(
-        'http://localhost:800/connection/toggle',
+        'https://setting-app-backend.vercel.app/connection/toggle',
         { name }
       )
       setStateFunction(response.data.btnStatus)
       // ➖👉👉👉👉👉
-      const responses = await axios.post('http://localhost:800/connection/data')
+      const responses = await axios.post('https://setting-app-backend.vercel.app/connection/data')
       console.log(responses)
     } catch (error) {
       console.log('error while fetching data ', error)
@@ -37,7 +37,7 @@ const NearbyShare = () => {
       }
 
       const response = await axios.post(
-        'http://localhost:800/connection/data',
+        'https://setting-app-backend.vercel.app/connection/data',
         { data }
       )
       document.getElementById('DNSAccountDiv').style.display = 'none'
@@ -50,7 +50,7 @@ const NearbyShare = () => {
   }
   const inputDeviceChange = async e => {
     const data = { name: 'DeviceName', deviceName: deviceName }
-    const response = await axios.post('http://localhost:800/connection/data', {
+    const response = await axios.post('https://setting-app-backend.vercel.app/connection/data', {
       data
     })
 
@@ -62,10 +62,10 @@ const NearbyShare = () => {
      try {
       document.getElementById('DNSAccountDiv').style.display = 'none'
 
-      const response = await axios.get('http://localhost:800/connection/status')
+      const response = await axios.get('https://setting-app-backend.vercel.app/connection/status')
 
       const responses = await axios.get(
-        'http://localhost:800/connection/getData'
+        'https://setting-app-backend.vercel.app/connection/getData'
       )
 
       setDeviceName(responses.data.DeviceName.DeviceName)

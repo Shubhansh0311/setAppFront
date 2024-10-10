@@ -8,7 +8,7 @@ const MobileNetwork = () => {
     try {
       const data = { name: e.target.name }
       const response = await axios.post(
-        'http://localhost:800/sim/toggleData',
+        'https://setting-app-backend.vercel.app/sim/toggleData',
         data
       )
       setNetworkBtn(response.data.btnStatus)
@@ -21,7 +21,7 @@ const MobileNetwork = () => {
     const fetchData = async () => {
   try {
     const toggleBtnData = await axios.get(
-      'http://localhost:800/sim/getToggleStatus'
+      'https://setting-app-backend.vercel.app/sim/getToggleStatus'
     )
     setNetworkBtn(toggleBtnData.data.togglesData.networkBtn.btnStatus)  
   } catch (error) {
