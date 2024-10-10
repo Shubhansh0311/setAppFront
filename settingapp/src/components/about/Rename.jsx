@@ -16,7 +16,7 @@ const Rename = () => {
       const response = await axios.post('https://setting-app-backend.vercel.app/about/rename', {
         name
       })
-      // console.log(response)
+      console.log(response)
       navigate(-1)
     } catch (error) {
       console.log('phone cannot be renamed ', error)
