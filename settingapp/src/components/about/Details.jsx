@@ -1,8 +1,8 @@
 import React from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import {  useNavigate } from 'react-router-dom'
 import chip from '../../images/chip.png'
 const Details = () => {
-  const location = useLocation()
+  // const location = useLocation()
   const navigate = useNavigate()
   return (
     <div className='main_container'>
@@ -18,11 +18,11 @@ const Details = () => {
         </span>
         <h1 className='heading_primary'>Detailed info and specs</h1>
         <div className='detailsDiv_1 detailDiv'>
-          <img style={{ width: '7%' }} src={chip} />
+          <img style={{ width: '7%' }} alt='' src={chip} />
           <p className='text_secondary'>RAM</p>
           <p className='text_primary'>8.0+4.0 GB</p>
           <br />
-          <img style={{ width: '7%' }} src={chip} />
+          <img style={{ width: '7%' }} alt='' src={chip} />
           <p className='text_secondary'>CPU</p>
           <p className='text_primary'>Dimensity 1080</p>
           <p className='text_primary'>Octa-core Max 2.6GHz</p>

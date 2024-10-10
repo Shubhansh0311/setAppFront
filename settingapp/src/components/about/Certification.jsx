@@ -33,7 +33,7 @@ const Certification = () => {
           <p className='text_secondary'>R-34241234</p>
           <p className='text_secondary'>www.bis.gov.in</p>
           <p className='text_primary'>E-Waste</p>
-          <img style={{ width: '30px', height: 'auto' }} src={trash} />
+          <img style={{ width: '30px', height: 'auto' }} alt='' src={trash} />
         </div>
       </div>
     </div>

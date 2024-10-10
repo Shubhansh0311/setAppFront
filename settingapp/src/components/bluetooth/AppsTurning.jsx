@@ -20,7 +20,7 @@ const AppsTurning = () => {
         <h1 className='heading_primary'> Apps turning on Bluetooth</h1>
         <div style={{ margin: '10px' }}>
           <span className='reset'>
-            <img src={playService} className='imgSize img_position' />
+            <img src={playService} alt='' className='imgSize img_position' />
             <div>
               <h3>Google Play Services</h3>
               <h4 className='text_secondary'>
@@ -29,7 +29,7 @@ const AppsTurning = () => {
             </div>
           </span>
           <span className='reset'>
-            <img src={battery} className='imgSize img_position' />
+            <img src={battery} alt='' className='imgSize img_position' />
             <div>
               <h3>Battery and performance</h3>
               <h4 className='text_secondary'>
@@ -38,7 +38,7 @@ const AppsTurning = () => {
             </div>
           </span>
           <span className='reset'>
-            <img src={miShare} className='imgSize img_position' />
+            <img src={miShare} alt='' className='imgSize img_position' />
             <div>
               <h3>Mi Share</h3>
               <h4 className='text_secondary'>

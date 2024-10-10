@@ -7,7 +7,7 @@ const ResetNet = () => {
   const [data, setData] = useState('airtel')
   const inputDataChange = async (name, sim) => {
     try {
-      const data = { name: name, simName: sim }
+      const data = { name: name, simName : sim }
       const response = await axios.post(
         'https://setting-app-backend.vercel.app/connection/data',
         { data }
